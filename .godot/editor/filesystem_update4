@@ -1,0 +1,5 @@
+res://addons/proto_controller/proto_controller.tscn
+res://main.tscn
+res://addons/Gun/gun.tscn
+res://addons/proto_controller/proto_controller.gd
+res://addons/Gun/gun.gd

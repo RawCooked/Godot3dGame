@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1741901127
+icon.svg::CompressedTexture2D/CompressedTexture2D::1683492429692487867::1741900811::1741900876::1::::<><><>0<>0<>71daf3ea050d94c03b1fde9fbecd7d30<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.tscn::PackedScene/PackedScene::5584275570693845848::1741900916::0::1::::<><><>0<>0<><>::uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn
+README.md::TextFile/TextFile::-1::1741900811::0::1::::<><><>0<>0<><>::
+::res://addons/::1741901127
+gun.tscn::PackedScene::7849452016067011159::1741901110::0::1::::<><><>0<>0<><>::
+::res://addons/Gun/::1741901122
+::res://addons/proto_controller/::1741900906
+proto_controller.gd::GDScript/GDScript::4637469374190196358::1741900811::0::1::::<>CharacterBody3D<><>0<>0<><>::
+proto_controller.tscn::PackedScene/PackedScene::3717544648773412845::1741900906::0::1::::<><><>0<>0<><>::uid://b7copcfv403p7::::res://addons/proto_controller/proto_controller.gd

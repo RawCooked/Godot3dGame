@@ -52,6 +52,9 @@ var freeflying : bool = false
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
+@onready var gun : Node3D = $Head/Gun
+@onready var player : CharacterBody3D = $"."
+
 
 func _ready() -> void:
 	check_input_mappings()
@@ -90,6 +93,8 @@ func _physics_process(delta: float) -> void:
 		if not is_on_floor():
 			velocity += get_gravity() * delta
 
+	if (Input.is_action_just_pressed("shoot")):
+		shoot()
 	# Apply jumping
 	if can_jump:
 		if Input.is_action_just_pressed(input_jump) and is_on_floor():
@@ -176,3 +181,8 @@ func check_input_mappings():
 	if can_freefly and not InputMap.has_action(input_freefly):
 		push_error("Freefly disabled. No InputAction found for input_freefly: " + input_freefly)
 		can_freefly = false
+
+func shoot():
+	
+	gun.shoot()
+	pass
