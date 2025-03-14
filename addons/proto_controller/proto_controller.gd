@@ -183,6 +183,5 @@ func check_input_mappings():
 		can_freefly = false
 
 func shoot():
-	
-	gun.shoot()
+	look_rotation.x+=0.5
 	pass

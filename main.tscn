@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cltcg5n6qi4hw"]
+[gd_scene load_steps=6 format=3 uid="uid://cltcg5n6qi4hw"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_br6k6"]
+[ext_resource type="PackedScene" uid="uid://b2i5yr8ckrp5r" path="res://ninja.tscn" id="2_vuws4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lacpc"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -70,4 +71,7 @@ operation = 2
 size = Vector3(2.895, 3, 2)
 
 [node name="ProtoController" parent="." instance=ExtResource("1_br6k6")]
-transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 2, 4, -35)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, -35)
+
+[node name="Ch24_nonPBR" parent="." instance=ExtResource("2_vuws4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -32)
