@@ -36,6 +36,6 @@ shape = SubResource("CapsuleShape3D_iof21")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
 [node name="Gun" parent="Head" instance=ExtResource("2_wr06p")]
-transform = Transform3D(0.195, 0, 0, 0, 0.195, 0, 0, 0, 0.195, 0.267489, -0.535131, -0.76148)
+transform = Transform3D(0.195, 0, 0, 0, 0.195, 0, 0, 0, 0.195, 0.472047, -0.374423, -1.18206)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
