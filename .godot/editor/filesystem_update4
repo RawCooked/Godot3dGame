@@ -1,6 +1,12 @@
 res://main.tscn
 res://addons/proto_controller/proto_controller.tscn
 res://addons/Gun/gun.tscn
-res://ninja.tscn
-res://addons/Gun/gun.gd
+res://House.tscn
+res://main.gd
+res://light_trigger.gd
+res://lighttrigger.tscn
+res://lighttrigger.gd
+res://trigger.tscn
+res://trigger.gd
 res://addons/proto_controller/proto_controller.gd
+res://house.gd

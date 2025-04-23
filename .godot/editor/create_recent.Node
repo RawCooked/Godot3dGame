@@ -1,3 +1,9 @@
+CollisionShape3D
+Area3D
+CSGSphere3D
+OmniLight3D
+SpotLight3D
+DirectionalLight3D
 TextureRect
 MeshInstance3D
 Skeleton3D
