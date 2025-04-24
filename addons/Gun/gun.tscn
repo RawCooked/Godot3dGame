@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dj3llfbg8ck12"]
 
-[ext_resource type="Script" path="res://addons/Gun/gun.gd" id="1_2yvi4"]
+[ext_resource type="Script" uid="uid://c1bdk6nl2xtsx" path="res://addons/Gun/gun.gd" id="1_2yvi4"]
 [ext_resource type="PackedScene" uid="uid://urc2ultcf0up" path="res://addons/Gun/pistol2.fbx" id="2_jlmpd"]
 
 [node name="Gun" type="Node3D"]

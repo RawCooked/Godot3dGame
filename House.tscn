@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://77c845ihauq3"]
 
-[ext_resource type="Script" path="res://house.gd" id="1_bsnje"]
+[ext_resource type="Script" uid="uid://b6loar3ohqah6" path="res://house.gd" id="1_bsnje"]
 
 [node name="House" type="Node3D"]
 script = ExtResource("1_bsnje")
@@ -32,8 +32,8 @@ transform = Transform3D(-8.74228e-08, 4.37114e-08, 1, -1, -4.37114e-08, -8.74228
 size = Vector3(0.5, 20, 40)
 
 [node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D/Wall2/Wall2"]
-transform = Transform3D(-1, -8.74228e-08, -8.74228e-08, -8.74228e-08, 1, 8.74228e-08, 8.74228e-08, 8.74228e-08, -1, 2.13575, 21.6842, -0.842453)
-size = Vector3(0.5, 20, 40)
+transform = Transform3D(-1, -8.74228e-08, -8.74228e-08, -8.74228e-08, 1, 8.74233e-08, 8.74228e-08, 8.74228e-08, -1, 14.6631, 24.1044, -0.842453)
+size = Vector3(0.5, 15.1597, 40)
 
 [node name="Wall3" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 10, 20.4528)
@@ -61,7 +61,7 @@ transform = Transform3D(-1.58932e-08, 0, 1, 0, 1, 0, -1, 0, -1.58932e-08, -12.52
 size = Vector3(0.5, 6.80396, 25.2852)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.59845, 4.25482, 12.3616)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.59845, 5.04009, 16.2153)
 light_energy = 14.736
 light_indirect_energy = 6.887
 light_volumetric_fog_energy = 1.36
