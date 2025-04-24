@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3 uid="uid://77c845ihauq3"]
+
+[ext_resource type="Script" path="res://house.gd" id="1_bsnje"]
+
+[node name="House" type="Node3D"]
+script = ExtResource("1_bsnje")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 70)
+use_collision = true
+
+[node name="Wall_with_window" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0.452789)
+size = Vector3(0.5, 20, 20)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D/Wall_with_window"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 1.56528, 0)
+operation = 2
+radius = 2.9
+sides = 50
+
+[node name="Wall" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 20.4528)
+size = Vector3(0.5, 20, 20)
+
+[node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 10, 30.4528)
+size = Vector3(0.5, 20, 20)
+
+[node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D/Wall2"]
+transform = Transform3D(-8.74228e-08, 4.37114e-08, 1, -1, -4.37114e-08, -8.74228e-08, 4.37114e-08, -1, 4.37114e-08, 20, 10, 21.1576)
+size = Vector3(0.5, 20, 40)
+
+[node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D/Wall2/Wall2"]
+transform = Transform3D(-1, -8.74228e-08, -8.74228e-08, -8.74228e-08, 1, 8.74228e-08, 8.74228e-08, 8.74228e-08, -1, 2.13575, 21.6842, -0.842453)
+size = Vector3(0.5, 20, 40)
+
+[node name="Wall3" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 10, 20.4528)
+size = Vector3(0.5, 20, 20)
+
+[node name="Wall4" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 10, 0.452791)
+size = Vector3(0.5, 20, 20)
+
+[node name="Wall_with_door" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 10, 10, -9.54721)
+size = Vector3(0.5, 20, 20)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/Wall_with_door"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9, 0)
+operation = 2
+size = Vector3(2.895, 3, 2)
+
+[node name="Wall_with_door2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(-1.58932e-08, 0, 1, 0, 1, 0, -1, 0, -1.58932e-08, 12.4011, 2.19648, 0.452789)
+size = Vector3(0.5, 6.74438, 16.0313)
+
+[node name="Wall_with_door2" type="CSGBox3D" parent="CSGCombiner3D/Wall_with_door2"]
+transform = Transform3D(-1.58932e-08, 0, 1, 0, 1, 0, -1, 0, -1.58932e-08, -12.5226, -0.0981107, 2.08059)
+size = Vector3(0.5, 6.80396, 25.2852)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.59845, 4.25482, 12.3616)
+light_energy = 14.736
+light_indirect_energy = 6.887
+light_volumetric_fog_energy = 1.36
+omni_range = 8.47198

@@ -5,6 +5,7 @@
 
 extends CharacterBody3D
 
+
 ## Can we move around?
 @export var can_move : bool = true
 ## Are we affected by gravity?
@@ -18,9 +19,9 @@ extends CharacterBody3D
 
 @export_group("Speeds")
 ## Look around rotation speed.
-@export var look_speed : float = 0.002
+@export var look_speed : float = 0.001
 ## Normal speed.
-@export var base_speed : float = 7.0
+@export var base_speed : float = 5.0
 ## Speed of jump.
 @export var jump_velocity : float = 4.5
 ## How fast do we run?
@@ -54,6 +55,10 @@ var freeflying : bool = false
 @onready var collider: CollisionShape3D = $Collider
 @onready var gun : Node3D = $Head/Gun
 @onready var player : CharacterBody3D = $"."
+@onready var flashLightOuter : SpotLight3D = $Head/flashLightOuter
+@onready var flashLightInner : SpotLight3D = $Head/flashLightInner
+@onready var house = get_node("/root/Main/House")  # Adjust if needed
+
 
 
 func _ready() -> void:
@@ -183,6 +188,18 @@ func check_input_mappings():
 		can_freefly = false
 
 func shoot():
-	
 	gun.shoot()
-	pass
+	toggle()
+	
+	
+	
+func toggle():
+	if flashLightOuter.light_energy == 0:
+		flashLightOuter.light_energy = 5.0  # or the original value you want
+		flashLightInner.light_energy = 5.0 
+		
+	else:
+		flashLightOuter.light_energy = 0
+		flashLightInner.light_energy =0
+		
+		

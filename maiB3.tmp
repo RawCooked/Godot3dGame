@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://cltcg5n6qi4hw"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_br6k6"]
+[ext_resource type="Script" path="res://main.gd" id="1_gtso0"]
+[ext_resource type="PackedScene" uid="uid://b2i5yr8ckrp5r" path="res://ninja.tscn" id="2_vuws4"]
+[ext_resource type="PackedScene" uid="uid://77c845ihauq3" path="res://House.tscn" id="3_m61yk"]
+[ext_resource type="PackedScene" uid="uid://cguq68bu8bfck" path="res://lighttrigger.tscn" id="5_pcvjr"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lacpc"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_j7jtn"]
+sky_material = SubResource("ProceduralSkyMaterial_lacpc")
+
+[sub_resource type="Environment" id="Environment_7m3wx"]
+background_mode = 2
+sky = SubResource("Sky_j7jtn")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_gtso0")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7m3wx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.353553, 0.176777, -0.918559, 0.353554, 0.883883, 0.306186, 0.866025, -0.433013, 0.25, -486, 160, -319)
+visible = false
+light_color = Color(0.947506, 0.767282, 0.0567014, 1)
+shadow_enabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.452789)
+use_collision = true
+size = Vector3(200, 0.02, 200)
+
+[node name="ProtoController" parent="." instance=ExtResource("1_br6k6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 47.0574)
+
+[node name="Ch24_nonPBR" parent="." instance=ExtResource("2_vuws4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -32)
+
+[node name="House" parent="." instance=ExtResource("3_m61yk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.98154, 0.00999451, -0.388106)
+
+[node name="Area3D" parent="." instance=ExtResource("5_pcvjr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3, 69)
