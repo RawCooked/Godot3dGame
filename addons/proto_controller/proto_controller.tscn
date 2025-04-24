@@ -45,10 +45,13 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 0.999993, -0.00383973, 0, 0.00383973, 0.999993, -0.0770601, -0.675964, -0.0738758)
 light_energy = 4.774
 spot_range = 90.2882
+spot_attenuation = 1.88
 spot_angle = 22.4101
+spot_angle_attenuation = 8.28211
 
 [node name="flashLightInner" type="SpotLight3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 0.999993, -0.00383973, 0, 0.00383973, 0.999993, -0.0770601, -0.675964, -0.0738758)
+visible = false
 light_energy = 7.491
 spot_range = 90.2882
 spot_angle = 1.39602

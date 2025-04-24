@@ -62,7 +62,11 @@ size = Vector3(0.5, 6.80396, 25.2852)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.59845, 5.04009, 16.2153)
-light_energy = 14.736
-light_indirect_energy = 6.887
+light_energy = 8.676
+light_indirect_energy = 9.151
 light_volumetric_fog_energy = 1.36
-omni_range = 8.47198
+light_size = 0.78
+light_specular = 0.0
+omni_range = 23.497
+omni_attenuation = 2.287
+omni_shadow_mode = 0

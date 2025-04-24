@@ -1,4 +1,5 @@
 res://main.tscn
+res://Night.tres
 res://addons/proto_controller/proto_controller.tscn
 res://addons/Gun/gun.tscn
 res://House.tscn
