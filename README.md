@@ -1,7 +1,7 @@
 
-# 🕹️ Godot 3D Light Toggle Game
+# 🕹️ Godot 3D Horror Game
 
-Welcome to the **Godot 3D Light Toggle** project! 🌟 This is a first-person prototype game created with [Godot Engine](https://godotengine.org/) designed to showcase:
+Welcome to the **Godot 3D Horror Game** project! 🌟 This is a first-person prototype game created with [Godot Engine](https://godotengine.org/) designed to showcase:
 - Smooth player movement 👣
 - Shooting mechanics 🔫
 - A flashlight toggle system 💡
